@@ -13,6 +13,24 @@
         <url-pattern>/lp_test_group/ServletContext</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ServletGetDBInformation</servlet-name>
+        <servlet-class>lp_test_group.ServletGetDBInformation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGetDBInformation</servlet-name>
+        <url-pattern>/lp_test_group/ServletGetDBInformation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>lp_test_group.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
     <!--配置全局参数-->
     <context-param>
         <param-name>author</param-name>
