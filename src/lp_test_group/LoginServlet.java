@@ -38,8 +38,14 @@ public class LoginServlet extends HttpServlet {
         if(username.equals(username01)) {
             if (password.equals(password01)) {
                 //对
-                System.out.println("1111");
-                request.getRequestDispatcher("dome/loginRight.jsp").forward(request,response);
+                //第一种
+                response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+                //response.setHeader("Location","https://bing.com");
+                response.sendRedirect("http://baidu.com");
+
+                //第二种
+                /*System.out.println("1111");
+                request.getRequestDispatcher("dome/loginRight.jsp").forward(request,response);*/
             } else {
                 //密码错误
                 System.out.println("111");
