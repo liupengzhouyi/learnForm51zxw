@@ -37,4 +37,15 @@
         <param-value>liupeng</param-value>
     </context-param>
 
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>lp_test_group.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/lp_test_group/DownloadServlet</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>
