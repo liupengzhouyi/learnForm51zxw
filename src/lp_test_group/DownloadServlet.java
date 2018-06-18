@@ -22,7 +22,17 @@ public class DownloadServlet extends HttpServlet {
         //如何将服务器上的资源返回给浏览器
         /*//输出字节码文件
         response.getWriter();*/
+
         String filename = request.getParameter("filename");
+
+        /*//不要预览，直接下载
+        String mimeType = this.getServletContext().getMimeType(filename);
+        response.setContentType(mimeType);
+        response.setHeader("Content-Disposition",
+                "attachment:filename=" + filename);
+*/
+
+
         //获取ServletContext对象的就对路径
         String realPath = this.getServletContext().getRealPath("download/" + filename);
 
